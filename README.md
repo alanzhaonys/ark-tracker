@@ -17,7 +17,7 @@ Make sure your (Linux) server have ample disk space for the growing data before 
 
 ***Hey, before we begin, your server must have MySQL installed, OK?!***
 
- 1. Clone the repository
+ 1. Clone/fork the repository
  2. Create a new database in your MySQL server, name it whatever you want
  3. Load `schema.sql` into the new database
  4. Copy `config.sample.php` to `config.php`
