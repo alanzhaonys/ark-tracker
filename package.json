@@ -1,0 +1,25 @@
+{
+  "name": "ark-tracker",
+  "version": "1.0.1",
+  "description": "This is a set of tools to track ARK ETF trades. It only gets the data for you, it's up to you to do something with the data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanzhaonys/ark-tracker.git"
+  },
+  "keywords": [
+    "ark",
+    "etf",
+    "stock",
+    "invest"
+  ],
+  "author": "Alan Zhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanzhaonys/ark-tracker/issues"
+  },
+  "homepage": "https://github.com/alanzhaonys/ark-tracker#readme"
+}
