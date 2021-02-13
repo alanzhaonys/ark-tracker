@@ -31,9 +31,9 @@ This is the **crawler** that downloads CSV files published daily by ARK from [ht
 
 `ark-invest.php`
 
-This is the ETL script that stores every transactions into database.
+This is the **ETL** script that stores every transactions into database.
 
-You can start running these scripts by running `./ark-invest.sh` and `php ./ark-invest.php`. These scripts will abort if you try to run on weekend, because they are intended to run on end of day of weekdays when stock market are open. The CSV files must exits for the date the ETL is running against.
+You can start running these scripts by `./ark-invest.sh` and `php ./ark-invest.php`. These scripts will abort if you try to run on weekend, because they are intended to run on end of day of weekdays when stock market are open. The CSV files must exists for the date the ETL is running against.
 
 If the ETL missed a day due to server outage or whaterver, you can manually kick it off by adding a date parameter to the ETL script, for example: `php ./ark-invest.php 2021-02-12`. If the ETL for that particular day has already been run, and you try to run it again, you will encounter with following messages. If you insist to redo the import for a particular day, you will have to delete the records from database manually and rerun the ETL for the day.
 
