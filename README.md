@@ -9,7 +9,7 @@ Proceed if you're:
  - **Interested in ARK ETFs**
  - **Familiar with SQL and will do something with the data**
 
-This tool will only process ARKK, ARKQ, ARKG, ARKF and ARKW files. It does not care about PRNT and IZRL at the moment.
+This tool will only process ARKK, ARKQ, ARKG, ARKF, ARKW and ARKX files. It does not care about PRNT and IZRL at the moment.
 
 Make sure your (Linux) server have ample disk space for the growing data before installation.
 
@@ -48,6 +48,8 @@ Already processed, skipping
 Processing ARKG
 Already processed, skipping
 Processing ARKF
+Already processed, skipping
+Processing ARKX
 Already processed, skipping
 ```
 

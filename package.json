@@ -1,6 +1,6 @@
 {
   "name": "ark-tracker",
-  "version": "1.0.4",
+  "version": "1.1.4",
   "description": "This is a set of tools to track ARK ETF trades. It only gets the data for you, it's up to you to do something with the data.",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,13 @@
   },
   "keywords": [
     "ark",
+    "inovation",
+    "ARKK",
+    "ARKQ",
+    "ARKW",
+    "ARKF",
+    "ARKG",
+    "ARKX",
     "etf",
     "stock",
     "invest"

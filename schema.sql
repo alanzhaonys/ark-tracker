@@ -121,6 +121,27 @@ CREATE TABLE `ARKW` (
 
 
 
+
+# Dump of table ARKX
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `ARKX`;
+
+CREATE TABLE `ARKX` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `company_id` int(11) unsigned NOT NULL,
+  `date` date NOT NULL,
+  `shares` decimal(20,2) NOT NULL,
+  `market_value` decimal(20,2) NOT NULL,
+  `weight` decimal(5,2) NOT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `idx-company-date` (`company_id`,`date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
 # Dump of table companies
 # ------------------------------------------------------------
 

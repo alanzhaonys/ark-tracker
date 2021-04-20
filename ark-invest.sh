@@ -2,13 +2,14 @@
 
 today=$(date +"%m-%d-%Y")
 day_of_week=$(date +"%u")
-etfs=("ARKK" "ARKQ" "ARKW" "ARKG" "ARKF")
+etfs=("ARKK" "ARKQ" "ARKW" "ARKG" "ARKF" "ARKX")
 download_urls=(
   "https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv"
   "https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECHNOLOGY_&_ROBOTICS_ETF_ARKQ_HOLDINGS.csv"
   "https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv"
   "https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_MULTISECTOR_ETF_ARKG_HOLDINGS.csv"
   "https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv"
+  "https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_&_INNOVATION_ETF_ARKX_HOLDINGS.csv"
 )
 
 # Skip weekend
@@ -29,7 +30,7 @@ do
 
   # Download and preserve the file timestamp using -R
   echo "----"
-  curl -R $download_url -o /tmp/${etf}.csv
+  curl --user-agent 'Chrome/79' -R $download_url -o /tmp/${etf}.csv
   echo "----"
   echo Remote file created on $(date -r /tmp/ARKK.csv +"%Y-%m-%d %H:%M:%S")
 

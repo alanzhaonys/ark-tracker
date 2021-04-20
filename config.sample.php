@@ -11,4 +11,4 @@ $db_password = '';
 $db_name = '';
 $db_port = '';
 
-$etfs = ['ARKK', 'ARKQ', 'ARKW', 'ARKG', 'ARKF'];
+$etfs = ['ARKK', 'ARKQ', 'ARKW', 'ARKG', 'ARKF', 'ARKX'];
